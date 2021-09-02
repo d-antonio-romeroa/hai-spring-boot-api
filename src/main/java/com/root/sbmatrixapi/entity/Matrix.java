@@ -25,22 +25,15 @@ public class Matrix {
         matrix_final = new ArrayList<>();
         for (int r = 1; r < this.R+1; r++){
             matrix_fila = new ArrayList<>();
+            if(r>1){
+                last_Z = last_Z + r -1;
+            }
 
             for (int i=0; i< this.C; i++){
                 matrix_fila.add(last_Z);
 
-
             };
             matrix_final.add(matrix_fila);
-            if (r > 1){
-                // System.out.println("enter");
-                System.out.println(last_Z);
-                System.out.println(r);
-                last_Z = last_Z + r - 1;
-            }
-            System.out.println(matrix_fila);
-
-            
         }
         System.out.println(matrix_final);
         
