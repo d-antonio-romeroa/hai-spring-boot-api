@@ -29,9 +29,13 @@ public class Matrix {
             for (int i=0; i< this.C; i++){
                 matrix_fila.add(last_Z);
 
+
             };
             matrix_final.add(matrix_fila);
             if (r > 1){
+                // System.out.println("enter");
+                System.out.println(last_Z);
+                System.out.println(r);
                 last_Z = last_Z + r - 1;
             }
             System.out.println(matrix_fila);
@@ -92,10 +96,10 @@ public class Matrix {
                 // for (int i = 0; i < x+1; i++){
                     int cell_val = this.matrix_final.get(j).get(0);
                     total += (x+1)*cell_val;
-                    System.out.println(total);
+                    // System.out.println(total);
                 // }
             };
-            System.out.println(this.matrix_final);
+            // System.out.println(this.matrix_final);
             
 
             return total;
